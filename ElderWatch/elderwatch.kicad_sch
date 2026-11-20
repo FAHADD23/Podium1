@@ -1,0 +1,3726 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "08a77c31-512f-4e59-85d0-7d1ca331fc3b")
+	(paper "A3")
+	(title_block
+		(title "ElderWatch Wearable Safety Device")
+		(date "2026-11-19")
+		(rev "1.0")
+		(company "ElderWatch Project")
+	)
+	(lib_symbols
+	(symbol "elderwatch:ESP32_DevKit_V1_30Pin"
+		(pin_names (offset 1.016))
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U" (at -17.78 21.59 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "ESP32_DevKit_30Pin" (at 17.78 21.59 0)
+			(effects (font (size 1.27 1.27)) (justify right))
+		)
+		(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "Description" "ESP32 DevKit V1 30-pin Development Board" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(symbol "ESP32_DevKit_V1_30Pin_0_1"
+			(rectangle (start -17.78 20.32) (end 17.78 -20.32)
+				(stroke (width 0.254) (type default))
+				(fill (type background))
+			)
+		)
+		(symbol "ESP32_DevKit_V1_30Pin_1_1"
+			(pin input line (at -20.32 17.78 0) (length 2.54) (name "EN" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			(pin input line (at -20.32 15.24 0) (length 2.54) (name "VP/GPIO36" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			(pin input line (at -20.32 12.70 0) (length 2.54) (name "VN/GPIO39" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+			(pin input line (at -20.32 10.16 0) (length 2.54) (name "GPIO34" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+			(pin input line (at -20.32 7.62 0) (length 2.54) (name "GPIO35" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+			(pin bidirectional line (at -20.32 5.08 0) (length 2.54) (name "GPIO32" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
+			(pin bidirectional line (at -20.32 2.54 0) (length 2.54) (name "GPIO33" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27)))))
+			(pin bidirectional line (at -20.32 0.00 0) (length 2.54) (name "GPIO25" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27)))))
+			(pin bidirectional line (at -20.32 -2.54 0) (length 2.54) (name "GPIO26" (effects (font (size 1.27 1.27)))) (number "9" (effects (font (size 1.27 1.27)))))
+			(pin bidirectional line (at -20.32 -5.08 0) (length 2.54) (name "GPIO27" (effects (font (size 1.27 1.27)))) (number "10" (effects (font (size 1.27 1.27)))))
+			(pin bidirectional line (at -20.32 -7.62 0) (length 2.54) (name "GPIO14" (effects (font (size 1.27 1.27)))) (number "11" (effects (font (size 1.27 1.27)))))
+			(pin bidirectional line (at -20.32 -10.16 0) (length 2.54) (name "GPIO12" (effects (font (size 1.27 1.27)))) (number "12" (effects (font (size 1.27 1.27)))))
+			(pin bidirectional line (at -20.32 -12.70 0) (length 2.54) (name "GPIO13" (effects (font (size 1.27 1.27)))) (number "13" (effects (font (size 1.27 1.27)))))
+			(pin power_in line (at -20.32 -15.24 0) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "14" (effects (font (size 1.27 1.27)))))
+			(pin power_in line (at -20.32 -17.78 0) (length 2.54) (name "VIN" (effects (font (size 1.27 1.27)))) (number "15" (effects (font (size 1.27 1.27)))))
+			(pin power_out line (at 20.32 17.78 180) (length 2.54) (name "3V3" (effects (font (size 1.27 1.27)))) (number "30" (effects (font (size 1.27 1.27)))))
+			(pin power_in line (at 20.32 15.24 180) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "29" (effects (font (size 1.27 1.27)))))
+			(pin bidirectional line (at 20.32 12.70 180) (length 2.54) (name "GPIO15" (effects (font (size 1.27 1.27)))) (number "28" (effects (font (size 1.27 1.27)))))
+			(pin bidirectional line (at 20.32 10.16 180) (length 2.54) (name "GPIO2" (effects (font (size 1.27 1.27)))) (number "27" (effects (font (size 1.27 1.27)))))
+			(pin bidirectional line (at 20.32 7.62 180) (length 2.54) (name "GPIO4" (effects (font (size 1.27 1.27)))) (number "26" (effects (font (size 1.27 1.27)))))
+			(pin bidirectional line (at 20.32 5.08 180) (length 2.54) (name "GPIO16" (effects (font (size 1.27 1.27)))) (number "25" (effects (font (size 1.27 1.27)))))
+			(pin bidirectional line (at 20.32 2.54 180) (length 2.54) (name "GPIO17" (effects (font (size 1.27 1.27)))) (number "24" (effects (font (size 1.27 1.27)))))
+			(pin bidirectional line (at 20.32 0.00 180) (length 2.54) (name "GPIO5" (effects (font (size 1.27 1.27)))) (number "23" (effects (font (size 1.27 1.27)))))
+			(pin bidirectional line (at 20.32 -2.54 180) (length 2.54) (name "GPIO18" (effects (font (size 1.27 1.27)))) (number "22" (effects (font (size 1.27 1.27)))))
+			(pin bidirectional line (at 20.32 -5.08 180) (length 2.54) (name "GPIO19" (effects (font (size 1.27 1.27)))) (number "21" (effects (font (size 1.27 1.27)))))
+			(pin bidirectional line (at 20.32 -7.62 180) (length 2.54) (name "GPIO21_SDA" (effects (font (size 1.27 1.27)))) (number "20" (effects (font (size 1.27 1.27)))))
+			(pin bidirectional line (at 20.32 -10.16 180) (length 2.54) (name "RX0/GPIO3" (effects (font (size 1.27 1.27)))) (number "19" (effects (font (size 1.27 1.27)))))
+			(pin bidirectional line (at 20.32 -12.70 180) (length 2.54) (name "TX0/GPIO1" (effects (font (size 1.27 1.27)))) (number "18" (effects (font (size 1.27 1.27)))))
+			(pin bidirectional line (at 20.32 -15.24 180) (length 2.54) (name "GPIO22_SCL" (effects (font (size 1.27 1.27)))) (number "17" (effects (font (size 1.27 1.27)))))
+			(pin bidirectional line (at 20.32 -17.78 180) (length 2.54) (name "GPIO23" (effects (font (size 1.27 1.27)))) (number "16" (effects (font (size 1.27 1.27)))))
+		)
+	)
+	(symbol "elderwatch:MPU6050_Module"
+		(pin_names (offset 1.016))
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U" (at -10.16 6.35 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "MPU6050_Module" (at 10.16 6.35 0)
+			(effects (font (size 1.27 1.27)) (justify right))
+		)
+		(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "Description" "MPU6050 6-Axis IMU Breakout Module (I2C)" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(symbol "MPU6050_Module_0_1"
+			(rectangle (start -10.16 5.08) (end 10.16 -5.08)
+				(stroke (width 0.254) (type default))
+				(fill (type background))
+			)
+		)
+		(symbol "MPU6050_Module_1_1"
+			(pin power_in line (at -12.70 2.54 0) (length 2.54) (name "VCC" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			(pin power_in line (at -12.70 0.00 0) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			(pin input line (at -12.70 -2.54 0) (length 2.54) (name "SCL" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+			(pin bidirectional line (at -12.70 -5.08 0) (length 2.54) (name "SDA" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+			(pin bidirectional line (at 12.70 2.54 180) (length 2.54) (name "XDA" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+			(pin output line (at 12.70 0.00 180) (length 2.54) (name "XCL" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
+			(pin input line (at 12.70 -2.54 180) (length 2.54) (name "AD0" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27)))))
+			(pin output line (at 12.70 -5.08 180) (length 2.54) (name "INT" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27)))))
+		)
+	)
+	(symbol "elderwatch:OLED_SSD1306_I2C"
+		(pin_names (offset 1.016))
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U" (at -10.16 6.35 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "OLED_0.96_SSD1306" (at 10.16 6.35 0)
+			(effects (font (size 1.27 1.27)) (justify right))
+		)
+		(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "Description" "0.96 inch OLED Display SSD1306 I2C 4-pin Module" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(symbol "OLED_SSD1306_I2C_0_1"
+			(rectangle (start -10.16 5.08) (end 10.16 -5.08)
+				(stroke (width 0.254) (type default))
+				(fill (type background))
+			)
+		)
+		(symbol "OLED_SSD1306_I2C_1_1"
+			(pin power_in line (at -12.70 2.54 0) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			(pin power_in line (at -12.70 0.00 0) (length 2.54) (name "VCC" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			(pin input line (at -12.70 -2.54 0) (length 2.54) (name "SCL" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+			(pin bidirectional line (at -12.70 -5.08 0) (length 2.54) (name "SDA" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+		)
+	)
+	(symbol "elderwatch:TCRT5000_Module"
+		(pin_names (offset 1.016))
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U" (at -10.16 6.35 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "TCRT5000_Module" (at 10.16 6.35 0)
+			(effects (font (size 1.27 1.27)) (justify right))
+		)
+		(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "Description" "TCRT5000 IR Reflective Optical Sensor Module" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(symbol "TCRT5000_Module_0_1"
+			(rectangle (start -10.16 5.08) (end 10.16 -5.08)
+				(stroke (width 0.254) (type default))
+				(fill (type background))
+			)
+		)
+		(symbol "TCRT5000_Module_1_1"
+			(pin power_in line (at -12.70 2.54 0) (length 2.54) (name "VCC" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			(pin power_in line (at -12.70 0.00 0) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			(pin output line (at 12.70 2.54 180) (length 2.54) (name "DO" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+			(pin output line (at 12.70 0.00 180) (length 2.54) (name "AO" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+		)
+	)
+	(symbol "elderwatch:TP4056_Module"
+		(pin_names (offset 1.016))
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U" (at -10.16 6.35 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "TP4056_Module" (at 10.16 6.35 0)
+			(effects (font (size 1.27 1.27)) (justify right))
+		)
+		(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "Description" "TP4056 1A Li-Ion Battery Charger & Protection Module" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(symbol "TP4056_Module_0_1"
+			(rectangle (start -10.16 5.08) (end 10.16 -5.08)
+				(stroke (width 0.254) (type default))
+				(fill (type background))
+			)
+		)
+		(symbol "TP4056_Module_1_1"
+			(pin power_in line (at -12.70 2.54 0) (length 2.54) (name "IN+" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			(pin power_in line (at -12.70 0.00 0) (length 2.54) (name "IN-" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -12.70 -2.54 0) (length 2.54) (name "B+" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at -12.70 -5.08 0) (length 2.54) (name "B-" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+			(pin power_out line (at 12.70 2.54 180) (length 2.54) (name "OUT+" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+			(pin power_in line (at 12.70 0.00 180) (length 2.54) (name "OUT-" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
+		)
+	)
+	(symbol "elderwatch:Boost_5V_Module"
+		(pin_names (offset 1.016))
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U" (at -11.43 6.35 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "Boost_Converter_5V" (at 11.43 6.35 0)
+			(effects (font (size 1.27 1.27)) (justify right))
+		)
+		(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "Description" "DC-DC Step-Up Boost Converter 5V Module" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(symbol "Boost_5V_Module_0_1"
+			(rectangle (start -11.43 5.08) (end 11.43 -5.08)
+				(stroke (width 0.254) (type default))
+				(fill (type background))
+			)
+		)
+		(symbol "Boost_5V_Module_1_1"
+			(pin power_in line (at -13.97 2.54 0) (length 2.54) (name "VIN+" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			(pin power_in line (at -13.97 0.00 0) (length 2.54) (name "VIN-" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			(pin power_out line (at 13.97 2.54 180) (length 2.54) (name "VOUT+" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+			(pin power_in line (at 13.97 0.00 180) (length 2.54) (name "VOUT-" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+		)
+	)
+	(symbol "elderwatch:VBAT"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#PWR"
+			(at 0 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VBAT"
+			(at 0 3.556 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "global power battery"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "VBAT_0_1"
+			(polyline
+				(pts
+					(xy -0.762 1.27) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54) (xy 0.762 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "VBAT_1_1"
+			(pin power_in line
+				(at 0 0 90)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "power:+3V3"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#PWR"
+			(at 0 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 0 3.556 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "+3V3_0_1"
+			(polyline
+				(pts
+					(xy -0.762 1.27) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54) (xy 0.762 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "+3V3_1_1"
+			(pin power_in line
+				(at 0 0 90)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "power:+5V"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#PWR"
+			(at 0 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 0 3.556 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "+5V_0_1"
+			(polyline
+				(pts
+					(xy -0.762 1.27) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54) (xy 0.762 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "+5V_1_1"
+			(pin power_in line
+				(at 0 0 90)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "power:GND"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#PWR"
+			(at 0 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "GND_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "GND_1_1"
+			(pin power_in line
+				(at 0 0 270)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "power:PWR_FLAG"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#FLG"
+			(at 0 1.905 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 0 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "flag power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_0"
+			(pin power_out line
+				(at 0 0 90)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Device:R"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "R"
+			(at 2.032 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 0 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "R res resistor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "R_0_1"
+			(rectangle
+				(start -1.016 -2.54)
+				(end 1.016 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Device:Buzzer"
+		(pin_names
+			(offset 0.0254)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "BZ"
+			(at 3.81 1.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Buzzer"
+			(at 3.81 -1.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at -0.635 2.54 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at -0.635 2.54 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Buzzer, polarized"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "quartz resonator ceramic"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "*Buzzer*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Buzzer_0_1"
+			(polyline
+				(pts
+					(xy -1.651 1.905) (xy -1.143 1.905)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.397 2.159) (xy -1.397 1.651)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 3.175)
+				(mid 3.1612 0)
+				(end 0 -3.175)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 3.175) (xy 0 -3.175)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Buzzer_1_1"
+			(pin passive line
+				(at -2.54 2.54 0)
+				(length 2.54)
+				(name "+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -2.54 -2.54 0)
+				(length 2.54)
+				(name "-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Device:Battery"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "BT"
+			(at 2.54 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Battery"
+			(at 2.54 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 1.524 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 1.524 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Multiple-cell battery"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "V"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" "DC"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "batt voltage-source cell"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Battery_0_1"
+			(rectangle
+				(start -2.286 1.778)
+				(end 2.286 1.524)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(rectangle
+				(start -2.286 -1.27)
+				(end 2.286 -1.524)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(rectangle
+				(start -1.524 1.016)
+				(end 1.524 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(rectangle
+				(start -1.524 -2.032)
+				(end 1.524 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 1.778) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 0.254)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -0.508) (xy 0 -0.254)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -1.016) (xy 0 -0.762)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 3.048) (xy 1.778 3.048)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 3.556) (xy 1.27 2.54)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Battery_1_1"
+			(pin passive line
+				(at 0 5.08 270)
+				(length 2.54)
+				(name "+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -5.08 90)
+				(length 2.54)
+				(name "-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Switch:SW_Push"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "SW"
+			(at 1.27 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 0 -1.524 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "switch normally-open pushbutton push-button"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "SW_Push_0_1"
+			(circle
+				(center -2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 1.27) (xy 0 3.048)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy -2.54 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Motor:Motor_DC"
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "M"
+			(at 2.54 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Motor_DC"
+			(at 2.54 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 -2.286 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 -2.286 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "DC Motor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "DC Motor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "PinHeader*P2.54mm* TerminalBlock*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Motor_DC_0_0"
+			(polyline
+				(pts
+					(xy -1.27 -3.302) (xy -1.27 0.508) (xy 0 -2.032) (xy 1.27 0.508) (xy 1.27 -3.302)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Motor_DC_0_1"
+			(polyline
+				(pts
+					(xy 0 2.032) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 1.7272) (xy 0 2.0828)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 0 -1.524)
+				(radius 3.2512)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -4.7752) (xy 0 -5.1816)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -7.62) (xy 0 -7.112)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Motor_DC_1_1"
+			(pin passive line
+				(at 0 5.08 270)
+				(length 2.54)
+				(name "+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Connector_Generic:Conn_01x02"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 0 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Conn_01x02_1_1"
+			(rectangle
+				(start -1.27 1.27)
+				(end 1.27 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Transistor_BJT:S8050"
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "Q"
+			(at 5.08 1.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "S8050"
+			(at 5.08 -1.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 5.08 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.unisonic.com.tw/datasheet/S8050.pdf"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "0.7A Ic, 20V Vce, Low Voltage High Current NPN Transistor, TO-92"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "NPN"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=E 2=B 3=C"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "S8050 NPN Low Voltage High Current Transistor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "S8050_0_1"
+			(polyline
+				(pts
+					(xy -2.54 0) (xy 0.635 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.635 1.905) (xy 0.635 -1.905)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 1.27 0)
+				(radius 2.8194)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "S8050_1_1"
+			(polyline
+				(pts
+					(xy 0.635 0.635) (xy 2.54 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.635 -0.635) (xy 2.54 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(pin passive line
+				(at 2.54 -5.08 90)
+				(length 2.54)
+				(name "E"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "B"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 5.08 270)
+				(length 2.54)
+				(name "C"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Diode:1N4148"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "diode"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "D*DO?35*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "1N4148_0_1"
+			(polyline
+				(pts
+					(xy -1.27 1.27) (xy -1.27 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 0) (xy -1.27 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "1N4148_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 2.54)
+				(name "K"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	)
+	(rectangle (start 17.78 20.32) (end 157.48 124.46)
+		(stroke (width 0.254) (type dash)) (fill (type none)) (uuid "979d20c9-4a9a-4fee-98b1-16570cf8bc2a")
+	)
+	(text "1. POWER MANAGEMENT (LiPo 3.7V -> TP4056 -> Boost 5V)" (exclude_from_sim no) (at 20.32 24.13 0)
+		(effects (font (size 2.032 2.032) bold) (justify left))
+		(uuid "fb184eb4-8fcd-4308-9cb7-e5caf428b6b1")
+	)
+	(symbol (lib_id "elderwatch:TP4056_Module") (at 81.28 60.96 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "ae195fda-c1bd-4086-8b77-3d8492436a45")
+		(property "Reference" "U2" (at 81.28 58.42 0)
+			(effects (font (size 1.27 1.27)) )
+		)
+		(property "Value" "TP4056_Module" (at 81.28 63.50 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 81.28 60.96 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 81.28 60.96 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "6aba748e-e0bb-4e58-8196-34a4c908f337"))
+		(pin "2" (uuid "e3fd7976-1444-45db-b590-121132f0ba6d"))
+		(pin "3" (uuid "2c3a040c-c272-4adc-ba11-93c138e41862"))
+		(pin "4" (uuid "b0452dca-744e-41fa-9da0-185aefc2242c"))
+		(pin "5" (uuid "f52be55d-7c07-4470-8166-d967775408bd"))
+		(pin "6" (uuid "9a7f3711-d700-4d9b-88de-bbbf0375e20a"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol (lib_id "Connector_Generic:Conn_01x02") (at 43.18 58.42 180) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "9aa48128-3e7c-4bb2-bc4b-e66b7b5556cc")
+		(property "Reference" "J1" (at 43.18 55.88 0)
+			(effects (font (size 1.27 1.27)) )
+		)
+		(property "Value" "USB_5V_IN" (at 43.18 60.96 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 43.18 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 43.18 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "8b1116e5-e4c5-4b47-b367-076672d9023f"))
+		(pin "2" (uuid "c59993f2-fbbc-44de-91c2-e4cd13d28e57"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 48.26 58.42) (xy 68.58 58.42))
+		(stroke (width 0) (type default))
+		(uuid "950cd6a2-c6e0-4738-aadf-ccbff8498121")
+	)
+	(symbol (lib_id "power:PWR_FLAG") (at 53.34 58.42 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "9d0eb32b-a5b6-4983-b134-834134a25d46")
+		(property "Reference" "#FLG01" (at 53.34 55.88 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "PWR_FLAG" (at 53.34 54.61 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 53.34 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 53.34 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "bef0e467-01db-46cf-b839-83755499df2d"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(junction (at 53.34 58.42) (diameter 0) (color 0 0 0 0) (uuid "4abf2581-408f-4fa0-bc8a-c545011de6d7"))
+	(wire (pts (xy 48.26 55.88) (xy 50.80 55.88))
+		(stroke (width 0) (type default))
+		(uuid "c9ec1af9-0b0a-46ac-b9af-459af4358de3")
+	)
+	(wire (pts (xy 50.80 55.88) (xy 50.80 50.80))
+		(stroke (width 0) (type default))
+		(uuid "a1270edf-b3a2-4654-a232-bea7d9959116")
+	)
+	(wire (pts (xy 50.80 50.80) (xy 63.50 50.80))
+		(stroke (width 0) (type default))
+		(uuid "20b92801-7710-45cf-92cf-72959dc756a6")
+	)
+	(wire (pts (xy 63.50 50.80) (xy 63.50 60.96))
+		(stroke (width 0) (type default))
+		(uuid "82ed1556-fa34-4a16-be92-0757285e3970")
+	)
+	(wire (pts (xy 63.50 60.96) (xy 68.58 60.96))
+		(stroke (width 0) (type default))
+		(uuid "6d895f5d-389e-4f9f-92b8-9855338aa552")
+	)
+	(junction (at 63.50 60.96) (diameter 0) (color 0 0 0 0) (uuid "38c59c9d-9f54-420a-8bd0-b6cfd870a60a"))
+	(wire (pts (xy 63.50 60.96) (xy 63.50 68.58))
+		(stroke (width 0) (type default))
+		(uuid "3ebacdc3-e945-4c03-9103-d30a7d69ad0d")
+	)
+	(symbol (lib_id "power:GND") (at 63.50 68.58 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "591d1893-d958-43e9-9f70-03766e8a51b6")
+		(property "Reference" "#PWR01" (at 63.50 66.04 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND" (at 63.50 72.39 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 63.50 68.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 63.50 68.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "1f69a739-3b2a-4326-8e3e-0d546a7d5fad"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol (lib_id "Device:Battery") (at 43.18 96.52 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "0869de09-5e9a-498c-b9e9-40d882be2363")
+		(property "Reference" "BT1" (at 43.18 93.98 0)
+			(effects (font (size 1.27 1.27)) )
+		)
+		(property "Value" "LiPo 3.7V 1000mAh" (at 43.18 99.06 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 43.18 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 43.18 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "f1abf4b3-2550-48c9-85df-1a977ef5fa97"))
+		(pin "2" (uuid "5335230f-d0e8-487f-9d50-59e3513be3c7"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "BT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 43.18 91.44) (xy 43.18 63.50))
+		(stroke (width 0) (type default))
+		(uuid "ff6e2296-ff5e-4efd-ad40-9fe70950e948")
+	)
+	(wire (pts (xy 43.18 63.50) (xy 68.58 63.50))
+		(stroke (width 0) (type default))
+		(uuid "3f905293-0161-4723-b007-258f2c4050e3")
+	)
+	(wire (pts (xy 43.18 101.60) (xy 60.96 101.60))
+		(stroke (width 0) (type default))
+		(uuid "12ea25d7-872d-45a3-9759-e4763aa84eaa")
+	)
+	(wire (pts (xy 60.96 101.60) (xy 60.96 66.04))
+		(stroke (width 0) (type default))
+		(uuid "a33d61df-f16c-429b-b72d-cebf78d89850")
+	)
+	(wire (pts (xy 60.96 66.04) (xy 68.58 66.04))
+		(stroke (width 0) (type default))
+		(uuid "7609de11-2c6b-44f5-8db8-00afd71c3c6e")
+	)
+	(symbol (lib_id "elderwatch:Boost_5V_Module") (at 124.46 60.96 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "9867de55-7699-4e30-9978-3387405dfdbc")
+		(property "Reference" "U3" (at 124.46 58.42 0)
+			(effects (font (size 1.27 1.27)) )
+		)
+		(property "Value" "Boost_Converter_5V" (at 124.46 63.50 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 124.46 60.96 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 124.46 60.96 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "dd8c0ef0-83d6-4b61-b5e3-58fe7b2118eb"))
+		(pin "2" (uuid "bdd1ce00-0d64-4b0d-bf2b-3bdb912bbf2a"))
+		(pin "3" (uuid "bd6b5c56-ff6e-4f97-b17e-7464476fc826"))
+		(pin "4" (uuid "8abdd1f8-58f4-4da3-bddb-b8f023deeb1c"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 93.98 58.42) (xy 110.49 58.42))
+		(stroke (width 0) (type default))
+		(uuid "7d247d7b-53de-4d0e-8550-e703db2d5042")
+	)
+	(junction (at 101.60 58.42) (diameter 0) (color 0 0 0 0) (uuid "8c26b133-3814-47ff-943e-da0eb049540b"))
+	(wire (pts (xy 101.60 58.42) (xy 101.60 48.26))
+		(stroke (width 0) (type default))
+		(uuid "5686c4b6-3730-4672-963c-433bfd5c2c08")
+	)
+	(symbol (lib_id "elderwatch:VBAT") (at 101.60 48.26 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "1950f5a5-2e7e-4b4e-a04a-bf92ebb1d88c")
+		(property "Reference" "#PWR02" (at 101.60 45.72 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "VBAT" (at 101.60 44.45 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 101.60 48.26 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 101.60 48.26 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "7588992c-febe-471a-a41c-0d638049f1e4"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 101.60 53.34) (xy 96.52 53.34))
+		(stroke (width 0) (type default))
+		(uuid "cb760a8f-56d4-44e4-8a98-e57949f242d1")
+	)
+	(junction (at 101.60 53.34) (diameter 0) (color 0 0 0 0) (uuid "f4b7c9ba-f535-4c9d-94db-63a0c62ab8ba"))
+	(symbol (lib_id "power:PWR_FLAG") (at 96.52 53.34 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "ce1847a8-987e-42ee-8efb-58032f56bb49")
+		(property "Reference" "#FLG02" (at 96.52 50.80 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "PWR_FLAG" (at 96.52 49.53 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 96.52 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 96.52 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "0c4befcd-cc35-4672-a424-82a10175aa04"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 93.98 60.96) (xy 99.06 60.96))
+		(stroke (width 0) (type default))
+		(uuid "63af4374-2d95-4d08-bee5-340105a9185a")
+	)
+	(wire (pts (xy 99.06 60.96) (xy 99.06 68.58))
+		(stroke (width 0) (type default))
+		(uuid "f57a82c6-a178-44aa-8a9c-7b8c18b2d460")
+	)
+	(symbol (lib_id "power:GND") (at 99.06 68.58 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "cc696bfa-af6b-473a-961c-1b6d8a875e86")
+		(property "Reference" "#PWR03" (at 99.06 66.04 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND" (at 99.06 72.39 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 99.06 68.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 99.06 68.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "05815b71-a645-45d0-a93a-d73f39eaa56d"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 110.49 60.96) (xy 105.41 60.96))
+		(stroke (width 0) (type default))
+		(uuid "2b028d9a-e929-41fb-8d95-8fa8f1210a26")
+	)
+	(wire (pts (xy 105.41 60.96) (xy 105.41 68.58))
+		(stroke (width 0) (type default))
+		(uuid "b17e82ee-1fa4-467c-a42a-c2e27a3296ee")
+	)
+	(symbol (lib_id "power:GND") (at 105.41 68.58 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "43d7f69f-7817-48b0-8a17-11ca5d135763")
+		(property "Reference" "#PWR04" (at 105.41 66.04 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND" (at 105.41 72.39 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 105.41 68.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 105.41 68.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "c9a9d56e-6fdb-4006-8210-94dc6feb87bf"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 138.43 58.42) (xy 146.05 58.42))
+		(stroke (width 0) (type default))
+		(uuid "706bbbf6-5d15-4299-be41-8c3f21b26f19")
+	)
+	(wire (pts (xy 146.05 58.42) (xy 146.05 50.80))
+		(stroke (width 0) (type default))
+		(uuid "3b644863-89c8-443c-87d3-27b6e12f91b6")
+	)
+	(symbol (lib_id "power:+5V") (at 146.05 50.80 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "49201332-e2ed-43f3-bf7f-b322ac37f249")
+		(property "Reference" "#PWR05" (at 146.05 48.26 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "+5V" (at 146.05 46.99 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 146.05 50.80 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 146.05 50.80 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "159874c9-5f7a-4204-82f0-8c5787e42d1b"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(junction (at 146.05 58.42) (diameter 0) (color 0 0 0 0) (uuid "2a9d7ae1-a690-4e2b-9637-519fe0bc1e11"))
+	(wire (pts (xy 146.05 58.42) (xy 151.13 58.42))
+		(stroke (width 0) (type default))
+		(uuid "2b2766b3-65be-4d6a-8ac2-93eecd2a1e8b")
+	)
+	(symbol (lib_id "power:PWR_FLAG") (at 151.13 58.42 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "750f4d42-106d-47d4-aac8-62ab80441ba1")
+		(property "Reference" "#FLG03" (at 151.13 55.88 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "PWR_FLAG" (at 151.13 54.61 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 151.13 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 151.13 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "bb3e8cee-8580-404e-b13e-56c93a112d8e"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 138.43 60.96) (xy 146.05 60.96))
+		(stroke (width 0) (type default))
+		(uuid "38a7ae9f-2ff8-4dac-b541-64de5db22f9f")
+	)
+	(wire (pts (xy 146.05 60.96) (xy 146.05 68.58))
+		(stroke (width 0) (type default))
+		(uuid "e43dd1c1-28d7-407e-b8cb-43c4e1d3e73a")
+	)
+	(symbol (lib_id "power:GND") (at 146.05 68.58 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "59e66c52-ab78-4c0e-a633-81b69cb16901")
+		(property "Reference" "#PWR06" (at 146.05 66.04 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND" (at 146.05 72.39 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 146.05 68.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 146.05 68.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "72d25ff5-cdc9-44ff-b809-2848fdc6f450"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(junction (at 146.05 60.96) (diameter 0) (color 0 0 0 0) (uuid "f05b8c76-0d21-416f-9637-c1bbbc7c4748"))
+	(wire (pts (xy 146.05 60.96) (xy 151.13 60.96))
+		(stroke (width 0) (type default))
+		(uuid "30242973-055d-4e99-ab2c-ff7c6c59774f")
+	)
+	(symbol (lib_id "power:PWR_FLAG") (at 151.13 60.96 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "9a71bcb3-0bc2-437e-83f9-8a0eb02a93fe")
+		(property "Reference" "#FLG04" (at 151.13 58.42 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "PWR_FLAG" (at 151.13 57.15 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 151.13 60.96 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 151.13 60.96 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "b7b68aa8-87c9-4963-b14a-47ca480fa96c"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "#FLG04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(rectangle (start 165.10 20.32) (end 269.24 165.10)
+		(stroke (width 0.254) (type dash)) (fill (type none)) (uuid "073ff533-e4a5-4748-a4e5-e06d3d8b097a")
+	)
+	(text "2. MICROCONTROLLER (ESP32 DevKit 30-Pin)" (exclude_from_sim no) (at 167.64 24.13 0)
+		(effects (font (size 2.032 2.032) bold) (justify left))
+		(uuid "ffc17a67-dc45-4ac2-bd9e-cc4f48b389b4")
+	)
+	(symbol (lib_id "elderwatch:ESP32_DevKit_V1_30Pin") (at 215.90 91.44 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "cb50ff7b-3f7b-4ff8-81df-9cc770c6333a")
+		(property "Reference" "U1" (at 215.90 88.90 0)
+			(effects (font (size 1.27 1.27)) )
+		)
+		(property "Value" "ESP32_DevKit_30Pin" (at 215.90 93.98 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 215.90 91.44 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 215.90 91.44 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "c50a2ab1-2731-40e9-9dbb-fd64d48c34f6"))
+		(pin "2" (uuid "abaa6788-5af3-4e61-8d55-f8bc07de0cae"))
+		(pin "3" (uuid "1295ead1-1cc0-4154-9c17-d1d711bbd633"))
+		(pin "4" (uuid "4c4e4d02-c662-45dd-ade8-7e955af5af8c"))
+		(pin "5" (uuid "020fd977-1678-47d0-8fcd-131b02d98067"))
+		(pin "6" (uuid "c8f85a03-3fdb-4639-b07f-bf854ee3b741"))
+		(pin "7" (uuid "68dbe38c-bb5f-4b85-87b6-124cef6cd95d"))
+		(pin "8" (uuid "802f3dcd-e4cf-425c-8cd4-0fb0b2639aa3"))
+		(pin "9" (uuid "d5a66c7f-1e53-4e9c-8ef0-f9db8d110498"))
+		(pin "10" (uuid "67c7c638-a4cc-4e59-8cf8-4e5772d48131"))
+		(pin "11" (uuid "eb78203d-898f-4c5f-b2f6-061b1b51a8fa"))
+		(pin "12" (uuid "74339122-844b-46b2-a6c7-59d78e8a5a68"))
+		(pin "13" (uuid "238b1e2e-96e1-4ce0-bf55-bccad06817c4"))
+		(pin "14" (uuid "5a69aff9-8e4a-4aaf-a9fc-b663d2f38d64"))
+		(pin "15" (uuid "f40af1e6-0cb4-4167-a2e1-98bf9d3a7af3"))
+		(pin "16" (uuid "029470c8-3a13-470e-864a-87b5c80f027e"))
+		(pin "17" (uuid "aea0974d-070d-407f-b220-17c03efc7ca8"))
+		(pin "18" (uuid "0ca363e3-31e6-4437-98b4-880004ccd7f6"))
+		(pin "19" (uuid "07500b13-ba7c-42c6-b187-b80ce903bb29"))
+		(pin "20" (uuid "3e180222-1385-416b-82a6-1191dd478c10"))
+		(pin "21" (uuid "737b5673-e83f-45ab-87a2-249f12abc1c1"))
+		(pin "22" (uuid "a3f5cd2a-bd4c-4922-864f-94a39a05f89d"))
+		(pin "23" (uuid "8ecb43e3-a14d-4c88-b2bc-85b6ae1661e2"))
+		(pin "24" (uuid "556f0f51-e430-475b-833f-2c4e250fc1f8"))
+		(pin "25" (uuid "af52b65b-a994-43d7-a180-9ed0facd5c44"))
+		(pin "26" (uuid "2a70a871-fe47-4b51-9744-bd84bb059c70"))
+		(pin "27" (uuid "ef050581-c970-4102-9ef8-6ce87fdadfd1"))
+		(pin "28" (uuid "bfad6501-77a6-4a04-8052-54927129127a"))
+		(pin "29" (uuid "281a0193-e9bb-48ff-a349-09142819ab7f"))
+		(pin "30" (uuid "132d4aee-32f6-479d-a1e1-c289330025ed"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(no_connect (at 195.58 73.66) (uuid "44db8915-22d5-4edf-9e64-cae5fe77c0f9"))
+	(no_connect (at 195.58 76.20) (uuid "f9d4dcf1-1285-4859-ac17-652b366e6c7a"))
+	(no_connect (at 195.58 78.74) (uuid "fccc0721-f9b2-4b5c-a070-c1f8605b810c"))
+	(wire (pts (xy 195.58 81.28) (xy 187.96 81.28))
+		(stroke (width 0) (type default))
+		(uuid "ebbed342-e841-44f7-9dbb-b05b5e4ece15")
+	)
+	(label "TCRT_DO" (at 187.96 81.28 0) (fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right bottom))
+		(uuid "b0f099e1-3fc3-4609-a8e8-ef84f885c6c2")
+	)
+	(wire (pts (xy 195.58 83.82) (xy 187.96 83.82))
+		(stroke (width 0) (type default))
+		(uuid "bc43f25d-c14f-49e5-9466-fb89ca01bb04")
+	)
+	(label "TCRT_AO" (at 187.96 83.82 0) (fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right bottom))
+		(uuid "0c75a363-9c42-4090-8304-2a8dd094e967")
+	)
+	(no_connect (at 195.58 86.36) (uuid "561a5416-7bc2-417c-80f4-fb953219d9dd"))
+	(no_connect (at 195.58 88.90) (uuid "fad5c1af-7d67-42e3-b273-afcde7f88940"))
+	(wire (pts (xy 195.58 91.44) (xy 187.96 91.44))
+		(stroke (width 0) (type default))
+		(uuid "0165d037-e9ea-4a4d-8a60-1f0e45075c3e")
+	)
+	(label "BUZZER_PIN" (at 187.96 91.44 0) (fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right bottom))
+		(uuid "2fa84eef-0d2e-4475-856c-4a11de191db7")
+	)
+	(wire (pts (xy 195.58 93.98) (xy 187.96 93.98))
+		(stroke (width 0) (type default))
+		(uuid "8156427a-9ed6-4318-84cf-03abe0b71daa")
+	)
+	(label "MOTOR_CTRL" (at 187.96 93.98 0) (fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right bottom))
+		(uuid "68f8e39a-31ef-487e-947a-a9bc2d81720e")
+	)
+	(wire (pts (xy 195.58 96.52) (xy 187.96 96.52))
+		(stroke (width 0) (type default))
+		(uuid "1326e932-d902-4cf3-a42c-41d93f650314")
+	)
+	(label "BTN_CANCEL" (at 187.96 96.52 0) (fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right bottom))
+		(uuid "3a74e94a-2653-4896-a774-52df12b7b3ee")
+	)
+	(no_connect (at 195.58 99.06) (uuid "7405f2c5-399b-4b94-8b58-9557d5df654a"))
+	(no_connect (at 195.58 101.60) (uuid "e43f2d7b-843c-4f11-86bd-768f501b58e0"))
+	(no_connect (at 195.58 104.14) (uuid "e7b0076e-2090-438d-8a3a-9a912ce0ddcc"))
+	(wire (pts (xy 195.58 106.68) (xy 177.80 106.68))
+		(stroke (width 0) (type default))
+		(uuid "8a7b103d-de51-485e-b855-b030630523b1")
+	)
+	(wire (pts (xy 177.80 106.68) (xy 177.80 116.84))
+		(stroke (width 0) (type default))
+		(uuid "462dfddd-a19a-4009-a5cf-70c917201c9c")
+	)
+	(symbol (lib_id "power:GND") (at 177.80 116.84 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "6daa2e12-af57-4ee9-a8d9-80a5f9726fbb")
+		(property "Reference" "#PWR07" (at 177.80 114.30 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND" (at 177.80 120.65 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 177.80 116.84 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 177.80 116.84 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "88149a35-57ac-42c2-be74-0a469ae032ea"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 195.58 109.22) (xy 187.96 109.22))
+		(stroke (width 0) (type default))
+		(uuid "511d4971-0b1c-4855-b776-1da3669b4a68")
+	)
+	(wire (pts (xy 187.96 109.22) (xy 187.96 116.84))
+		(stroke (width 0) (type default))
+		(uuid "6026e9a7-db49-4cc0-b52d-4b297ea7dceb")
+	)
+	(wire (pts (xy 187.96 116.84) (xy 182.88 116.84))
+		(stroke (width 0) (type default))
+		(uuid "a2cf57b2-4e5f-4e6c-a4e1-b594e256f330")
+	)
+	(wire (pts (xy 182.88 116.84) (xy 182.88 114.30))
+		(stroke (width 0) (type default))
+		(uuid "498bcac7-7cc5-435e-ade6-cfd341ebeb0b")
+	)
+	(symbol (lib_id "power:+5V") (at 182.88 114.30 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "7ef30e8e-1d6e-4ca9-a5d5-6c7be616d6a7")
+		(property "Reference" "#PWR08" (at 182.88 111.76 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "+5V" (at 182.88 110.49 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 182.88 114.30 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 182.88 114.30 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "b7e3c5f3-86ff-4c6d-a6be-e62cb328da9b"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(no_connect (at 236.22 109.22) (uuid "694f1ade-ad9a-40f1-aa72-585b01d2e575"))
+	(wire (pts (xy 236.22 106.68) (xy 243.84 106.68))
+		(stroke (width 0) (type default))
+		(uuid "bdfd8bd0-a001-46b3-a3a4-eb98a6d3e6b4")
+	)
+	(label "I2C_SCL" (at 243.84 106.68 0) (fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "3c6a6811-7c62-4bcf-937c-bea2f7441fb9")
+	)
+	(no_connect (at 236.22 104.14) (uuid "b6363a42-88e6-4b92-a6fa-942cd5086b71"))
+	(no_connect (at 236.22 101.60) (uuid "753bd603-f59d-4019-b753-651a8f2187d3"))
+	(wire (pts (xy 236.22 99.06) (xy 243.84 99.06))
+		(stroke (width 0) (type default))
+		(uuid "64caa90f-adc6-4ab1-ae1b-adaf3150dc9b")
+	)
+	(label "I2C_SDA" (at 243.84 99.06 0) (fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "c02579d5-bb1d-46ec-b0f2-40b3db333a1c")
+	)
+	(no_connect (at 236.22 96.52) (uuid "943777c5-804f-4805-a87f-f1dfc078bb5d"))
+	(no_connect (at 236.22 93.98) (uuid "c2782e1d-69b4-400b-a18a-375bdd07917e"))
+	(no_connect (at 236.22 91.44) (uuid "004be95f-aa00-43e7-abd0-e1f09fa1e415"))
+	(no_connect (at 236.22 88.90) (uuid "7296b4e8-19f3-4343-a973-dbfbc74734c7"))
+	(no_connect (at 236.22 86.36) (uuid "ca388d1f-a240-4676-9744-8ade0c3bed23"))
+	(no_connect (at 236.22 83.82) (uuid "aa9f96ef-87ed-456f-9e0b-59bf3f217049"))
+	(no_connect (at 236.22 81.28) (uuid "6183fc1f-7f3d-41ad-98b7-91fc69f712fd"))
+	(no_connect (at 236.22 78.74) (uuid "ec9bafa5-8383-4426-82d5-464466efa586"))
+	(wire (pts (xy 236.22 76.20) (xy 254.00 76.20))
+		(stroke (width 0) (type default))
+		(uuid "eca02f35-b53e-43ca-89f8-efec84878c73")
+	)
+	(wire (pts (xy 254.00 76.20) (xy 254.00 81.28))
+		(stroke (width 0) (type default))
+		(uuid "a0745e9f-b916-45b1-bb50-562438b8c9e9")
+	)
+	(symbol (lib_id "power:GND") (at 254.00 81.28 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "90250bc1-09ea-47dc-a2cd-494d8d7e8fcf")
+		(property "Reference" "#PWR09" (at 254.00 78.74 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND" (at 254.00 85.09 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 254.00 81.28 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 254.00 81.28 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "e66aecbc-db26-4282-83c0-3ad0756b0f21"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 236.22 73.66) (xy 243.84 73.66))
+		(stroke (width 0) (type default))
+		(uuid "72d2bd19-6852-4692-9b61-802731957d35")
+	)
+	(wire (pts (xy 243.84 73.66) (xy 243.84 68.58))
+		(stroke (width 0) (type default))
+		(uuid "a677bdd7-c651-494d-983e-2437ef8c2553")
+	)
+	(symbol (lib_id "power:+3V3") (at 243.84 68.58 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "c0d754f7-fd94-41a4-b8e5-209a58953f78")
+		(property "Reference" "#PWR10" (at 243.84 66.04 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "+3V3" (at 243.84 64.77 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 243.84 68.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 243.84 68.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "d26f6b3c-a5d5-4727-9956-f7f8ae8517d8"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "#PWR10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(junction (at 243.84 73.66) (diameter 0) (color 0 0 0 0) (uuid "4467bb5d-5536-4010-aa96-f317a7330345"))
+	(wire (pts (xy 243.84 73.66) (xy 248.92 73.66))
+		(stroke (width 0) (type default))
+		(uuid "9cb0b78c-7f57-4ae4-80ca-db32edaf3153")
+	)
+	(symbol (lib_id "power:PWR_FLAG") (at 248.92 73.66 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "b9cbdac9-5dfc-4372-af08-376d5e18e9ef")
+		(property "Reference" "#FLG05" (at 248.92 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "PWR_FLAG" (at 248.92 69.85 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 248.92 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 248.92 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "4c8a0981-38c8-4e88-af2f-031ac018b4f9"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "#FLG05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(rectangle (start 276.86 20.32) (end 401.32 152.40)
+		(stroke (width 0.254) (type dash)) (fill (type none)) (uuid "fc6fc18c-41e8-48ec-bb0a-74a9e0c9d376")
+	)
+	(text "3. SENSORS & OLED DISPLAY (I2C + TCRT5000)" (exclude_from_sim no) (at 279.40 24.13 0)
+		(effects (font (size 2.032 2.032) bold) (justify left))
+		(uuid "5a71f45d-2886-4f5a-aa8c-b0e511ee9a0d")
+	)
+	(symbol (lib_id "elderwatch:MPU6050_Module") (at 330.20 48.26 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "a3ed81c5-7a95-4e36-8f70-c68423f929d3")
+		(property "Reference" "U4" (at 330.20 45.72 0)
+			(effects (font (size 1.27 1.27)) )
+		)
+		(property "Value" "MPU6050_Module" (at 330.20 50.80 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 330.20 48.26 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 330.20 48.26 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "c700c64f-1054-419a-b667-15c37f0b0487"))
+		(pin "2" (uuid "0510ceb5-56fa-4c9e-8b61-3530106145e3"))
+		(pin "3" (uuid "8a13d0b5-feb8-4255-b7e8-1249f501462d"))
+		(pin "4" (uuid "865cac6e-244f-45b5-9c34-b5cfdccf78c3"))
+		(pin "5" (uuid "d3b7fba1-1f48-44f5-8d90-09abc685f07c"))
+		(pin "6" (uuid "b5cd3f00-7da2-4b9f-a2c9-ef1a00d14691"))
+		(pin "7" (uuid "2148ce1b-3c9c-43fe-914e-a8310d261dfa"))
+		(pin "8" (uuid "dc912d81-60d8-49ea-9b8a-47a06701f2ac"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 317.50 45.72) (xy 312.42 45.72))
+		(stroke (width 0) (type default))
+		(uuid "e326ce6d-4c46-41da-ac61-db888379e386")
+	)
+	(wire (pts (xy 312.42 45.72) (xy 312.42 40.64))
+		(stroke (width 0) (type default))
+		(uuid "3907cedb-0148-433a-9a3d-a77a408e82d4")
+	)
+	(symbol (lib_id "power:+3V3") (at 312.42 40.64 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "a332d0ce-eda8-41a0-8e4d-7df4c7db3908")
+		(property "Reference" "#PWR11" (at 312.42 38.10 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "+3V3" (at 312.42 36.83 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 312.42 40.64 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 312.42 40.64 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "d01e8312-62ac-4c3a-bb88-340ccf8aa6a3"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "#PWR11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 317.50 48.26) (xy 297.18 48.26))
+		(stroke (width 0) (type default))
+		(uuid "ce550297-e141-49f1-aae3-1eb08be6124d")
+	)
+	(wire (pts (xy 297.18 48.26) (xy 297.18 58.42))
+		(stroke (width 0) (type default))
+		(uuid "9a1d0f7f-433e-4a5a-bdb8-5485debc50e5")
+	)
+	(symbol (lib_id "power:GND") (at 297.18 58.42 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "bc231b8f-bdda-4736-af87-0a7d21972b91")
+		(property "Reference" "#PWR12" (at 297.18 55.88 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND" (at 297.18 62.23 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 297.18 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 297.18 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "e8d4cd2a-c8fb-4abf-b31c-41a9f6073bc2"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "#PWR12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 317.50 50.80) (xy 309.88 50.80))
+		(stroke (width 0) (type default))
+		(uuid "60bc04d8-9396-460b-ad4c-6874fedc4f72")
+	)
+	(label "I2C_SCL" (at 309.88 50.80 0) (fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right bottom))
+		(uuid "338d8009-310e-402d-8c20-6634da96c3e4")
+	)
+	(wire (pts (xy 317.50 53.34) (xy 309.88 53.34))
+		(stroke (width 0) (type default))
+		(uuid "ec3f2619-6ab6-4287-89ed-bcf6d3f25414")
+	)
+	(label "I2C_SDA" (at 309.88 53.34 0) (fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right bottom))
+		(uuid "fd743f30-07d8-4e61-bab6-55496bd7a190")
+	)
+	(no_connect (at 342.90 45.72) (uuid "cb7e299c-f008-4f85-a9c7-20f50768b58b"))
+	(no_connect (at 342.90 48.26) (uuid "4fb61624-f48f-49bf-9356-089a59694bab"))
+	(no_connect (at 342.90 53.34) (uuid "9bdde9e7-469d-4055-9d92-e89b20f837d3"))
+	(wire (pts (xy 342.90 50.80) (xy 347.98 50.80))
+		(stroke (width 0) (type default))
+		(uuid "eb3f4e6d-e373-483b-bc3c-7e4aeef3925c")
+	)
+	(wire (pts (xy 347.98 50.80) (xy 347.98 55.88))
+		(stroke (width 0) (type default))
+		(uuid "641b9cdd-ca63-4106-a8ae-518682943c80")
+	)
+	(symbol (lib_id "power:GND") (at 347.98 55.88 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "2dec9ae4-8363-46af-9af5-2aab4fa24971")
+		(property "Reference" "#PWR13" (at 347.98 53.34 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND" (at 347.98 59.69 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 347.98 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 347.98 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "59bba1ef-ec63-4ef5-b48c-cf5211e89adc"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "#PWR13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol (lib_id "elderwatch:OLED_SSD1306_I2C") (at 330.20 88.90 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "79f21d89-7406-492d-b63b-cfd1d33990c1")
+		(property "Reference" "U5" (at 330.20 86.36 0)
+			(effects (font (size 1.27 1.27)) )
+		)
+		(property "Value" "OLED_0.96_SSD1306" (at 330.20 91.44 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 330.20 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 330.20 88.90 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "1ad7abd3-a78b-499e-9abc-e6e7852b1046"))
+		(pin "2" (uuid "5a4b7506-5157-4a33-9169-ff62c4da2d0f"))
+		(pin "3" (uuid "20030325-16f5-48e0-89c1-71b8f9d67685"))
+		(pin "4" (uuid "57bc2def-41d2-43eb-b35a-d53cc1e6d191"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 317.50 86.36) (xy 297.18 86.36))
+		(stroke (width 0) (type default))
+		(uuid "2fd0651e-0107-49eb-a361-b1c3d92ebaea")
+	)
+	(wire (pts (xy 297.18 86.36) (xy 297.18 96.52))
+		(stroke (width 0) (type default))
+		(uuid "19d384fe-2c92-4162-a8dd-8ed7c1f24161")
+	)
+	(symbol (lib_id "power:GND") (at 297.18 96.52 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "85cdb76a-1ae4-4f4f-b0e7-f8cf79755ec4")
+		(property "Reference" "#PWR14" (at 297.18 93.98 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND" (at 297.18 100.33 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 297.18 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 297.18 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "704c8613-2d68-421f-8eea-907afe714bfd"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "#PWR14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 317.50 88.90) (xy 292.10 88.90))
+		(stroke (width 0) (type default))
+		(uuid "f4dca4c9-9488-44e6-b065-911a2d6cde2b")
+	)
+	(wire (pts (xy 292.10 88.90) (xy 292.10 81.28))
+		(stroke (width 0) (type default))
+		(uuid "1200548f-26af-4b47-bef0-08a92c87016b")
+	)
+	(symbol (lib_id "power:+3V3") (at 292.10 81.28 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "d250498c-cea6-49f3-a35f-321b4f472e69")
+		(property "Reference" "#PWR15" (at 292.10 78.74 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "+3V3" (at 292.10 77.47 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 292.10 81.28 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 292.10 81.28 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "2c967845-5dfb-4a66-b543-b7355527c5e7"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "#PWR15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 317.50 91.44) (xy 309.88 91.44))
+		(stroke (width 0) (type default))
+		(uuid "4f52dfed-cbeb-4a7b-943f-9012f9086b16")
+	)
+	(label "I2C_SCL" (at 309.88 91.44 0) (fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right bottom))
+		(uuid "1c572340-5ab4-4f25-893c-4fbca35dda1b")
+	)
+	(wire (pts (xy 317.50 93.98) (xy 309.88 93.98))
+		(stroke (width 0) (type default))
+		(uuid "486f1dc6-b644-49b2-97b9-883a08cda24f")
+	)
+	(label "I2C_SDA" (at 309.88 93.98 0) (fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right bottom))
+		(uuid "898e1e33-8eb7-487c-8146-5389a423de3c")
+	)
+	(symbol (lib_id "elderwatch:TCRT5000_Module") (at 330.20 129.54 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "048800ff-acec-4627-880a-1188187b6520")
+		(property "Reference" "U6" (at 330.20 127.00 0)
+			(effects (font (size 1.27 1.27)) )
+		)
+		(property "Value" "TCRT5000_Module" (at 330.20 132.08 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 330.20 129.54 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 330.20 129.54 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "220bb2db-5092-4d63-8352-96f7d7f7f9dd"))
+		(pin "2" (uuid "dcd6c78b-4590-4ec4-983d-68bdaf7bb1c2"))
+		(pin "3" (uuid "9d4f85e4-d018-4b08-8d7d-2ab006a605dd"))
+		(pin "4" (uuid "5ac7f62c-8a98-40cd-92b7-b1650e44b55a"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 317.50 127.00) (xy 312.42 127.00))
+		(stroke (width 0) (type default))
+		(uuid "e366994f-b75a-4bf3-b2a3-48c59f2dd084")
+	)
+	(wire (pts (xy 312.42 127.00) (xy 312.42 121.92))
+		(stroke (width 0) (type default))
+		(uuid "5f68e669-d2af-4ac9-9689-e3d68d6c0e1e")
+	)
+	(symbol (lib_id "power:+3V3") (at 312.42 121.92 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "8fd9a689-a973-4351-a88f-50db5e01677c")
+		(property "Reference" "#PWR16" (at 312.42 119.38 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "+3V3" (at 312.42 118.11 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 312.42 121.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 312.42 121.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "886ff640-6742-43dc-9e87-c52e628ce2c2"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "#PWR16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 317.50 129.54) (xy 312.42 129.54))
+		(stroke (width 0) (type default))
+		(uuid "205c5e63-f316-4f74-a799-68aaee7d96c7")
+	)
+	(wire (pts (xy 312.42 129.54) (xy 312.42 134.62))
+		(stroke (width 0) (type default))
+		(uuid "683a678d-1949-4d29-a6aa-623f1738fb87")
+	)
+	(symbol (lib_id "power:GND") (at 312.42 134.62 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "c6102075-1440-4f2b-b026-6f7c69e30bf1")
+		(property "Reference" "#PWR17" (at 312.42 132.08 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND" (at 312.42 138.43 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 312.42 134.62 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 312.42 134.62 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "31cae50e-9b4a-4b39-a4bb-02c79e8c5289"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "#PWR17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 342.90 127.00) (xy 350.52 127.00))
+		(stroke (width 0) (type default))
+		(uuid "44b9e59e-6d8e-47b5-9d32-b84db332b653")
+	)
+	(label "TCRT_DO" (at 350.52 127.00 0) (fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "66f064b9-ce2c-46c5-97c5-7863af22a900")
+	)
+	(wire (pts (xy 342.90 129.54) (xy 350.52 129.54))
+		(stroke (width 0) (type default))
+		(uuid "d2e8c9d4-ee8a-482b-84be-c2adafd316cf")
+	)
+	(label "TCRT_AO" (at 350.52 129.54 0) (fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "9fde529a-1ef4-4a0a-a895-4f187dc032f8")
+	)
+	(rectangle (start 276.86 157.48) (end 401.32 264.16)
+		(stroke (width 0.254) (type dash)) (fill (type none)) (uuid "3bcfcef0-b54b-4fd4-b577-34edab515403")
+	)
+	(text "4. ACTUATORS & USER INPUT (Buzzer, Vibration Motor Driver, Cancel Button)" (exclude_from_sim no) (at 279.40 161.29 0)
+		(effects (font (size 2.032 2.032) bold) (justify left))
+		(uuid "e930438b-0f7d-4a8c-85fb-31f662203289")
+	)
+	(symbol (lib_id "Device:Buzzer") (at 309.88 182.88 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "0950b21e-6a92-4901-98d7-ce522065d8d4")
+		(property "Reference" "BZ1" (at 309.88 180.34 0)
+			(effects (font (size 1.27 1.27)) )
+		)
+		(property "Value" "Active_Buzzer" (at 309.88 185.42 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 309.88 182.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 309.88 182.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "593dfef0-fa97-4ab2-99b6-08f48b7038d2"))
+		(pin "2" (uuid "18099731-cf53-45b1-8415-0ab9c9c5577e"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "BZ1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 307.34 180.34) (xy 299.72 180.34))
+		(stroke (width 0) (type default))
+		(uuid "dc68010f-584a-4497-8433-a55fdd52ca66")
+	)
+	(label "BUZZER_PIN" (at 299.72 180.34 0) (fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right bottom))
+		(uuid "aa629c24-4d41-400f-9fe6-1a7a10a3e6e2")
+	)
+	(wire (pts (xy 307.34 185.42) (xy 302.26 185.42))
+		(stroke (width 0) (type default))
+		(uuid "e7dde26a-56b2-4561-8d92-63f5be47d436")
+	)
+	(wire (pts (xy 302.26 185.42) (xy 302.26 190.50))
+		(stroke (width 0) (type default))
+		(uuid "4156fc1f-d244-4f32-934b-b19b5d9c6828")
+	)
+	(symbol (lib_id "power:GND") (at 302.26 190.50 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "378da853-5cc0-4553-a035-32514c5b6d82")
+		(property "Reference" "#PWR18" (at 302.26 187.96 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND" (at 302.26 194.31 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 302.26 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 302.26 190.50 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "675232a4-00a9-4d33-8028-716ab91ff6d2"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "#PWR18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol (lib_id "Switch:SW_Push") (at 309.88 228.60 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "76e3355b-1cb4-40b4-b3f7-4dca0db45e8b")
+		(property "Reference" "SW1" (at 309.88 226.06 0)
+			(effects (font (size 1.27 1.27)) )
+		)
+		(property "Value" "SW_Cancel" (at 309.88 231.14 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 309.88 228.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 309.88 228.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "746b5b6c-947e-4197-bdd1-250f68c6beea"))
+		(pin "2" (uuid "f633ff90-3d44-45b2-8134-63ec38095d0b"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 304.80 228.60) (xy 297.18 228.60))
+		(stroke (width 0) (type default))
+		(uuid "d02bc900-8b50-482f-ab5c-3945c9b0640d")
+	)
+	(label "BTN_CANCEL" (at 297.18 228.60 0) (fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right bottom))
+		(uuid "94df1db8-d03e-420a-9f61-6dfb36f05fe6")
+	)
+	(wire (pts (xy 314.96 228.60) (xy 320.04 228.60))
+		(stroke (width 0) (type default))
+		(uuid "fbb71a85-9892-4d47-b703-fe7180c22f74")
+	)
+	(wire (pts (xy 320.04 228.60) (xy 320.04 233.68))
+		(stroke (width 0) (type default))
+		(uuid "9cd0c018-5c74-4831-b3fa-c5cb45d78700")
+	)
+	(symbol (lib_id "power:GND") (at 320.04 233.68 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "55260ebd-7ed7-4abc-a50c-0660c1e5f5c9")
+		(property "Reference" "#PWR19" (at 320.04 231.14 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND" (at 320.04 237.49 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 320.04 233.68 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 320.04 233.68 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "6d9ca951-4e78-4e1e-8ed6-0eb60cc9362d"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "#PWR19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol (lib_id "Transistor_BJT:S8050") (at 368.30 231.14 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "ef464ea2-c80d-4eb6-9fdc-1fbbce337b49")
+		(property "Reference" "Q1" (at 368.30 228.60 0)
+			(effects (font (size 1.27 1.27)) )
+		)
+		(property "Value" "S8050" (at 368.30 233.68 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 368.30 231.14 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 368.30 231.14 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "f384f1ac-8a85-4912-a762-482c553f930c"))
+		(pin "2" (uuid "354c05e0-1107-4c00-91db-b06e1b6d04ad"))
+		(pin "3" (uuid "ea0380dc-2fd0-4cd6-989b-d9672869cbec"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 370.84 236.22) (xy 370.84 241.30))
+		(stroke (width 0) (type default))
+		(uuid "c778f388-dda8-44ea-b773-7cb56b487aee")
+	)
+	(symbol (lib_id "power:GND") (at 370.84 241.30 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "73dbd934-337c-4c10-ac2d-79ddfbfe7216")
+		(property "Reference" "#PWR20" (at 370.84 238.76 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND" (at 370.84 245.11 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 370.84 241.30 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 370.84 241.30 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "12811ed5-d6bf-4678-b117-aad3f8aa3c1b"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "#PWR20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol (lib_id "Device:R") (at 353.06 231.14 90) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "0c345198-c854-4540-b9de-d6979e31a865")
+		(property "Reference" "R1" (at 353.06 228.60 0)
+			(effects (font (size 1.27 1.27)) )
+		)
+		(property "Value" "1k" (at 353.06 233.68 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 353.06 231.14 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 353.06 231.14 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "58364de3-021a-4bf6-990a-4737c4cd86a9"))
+		(pin "2" (uuid "9c98cef5-ed21-4790-b0de-0bdbcba8a53b"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 356.87 231.14) (xy 363.22 231.14))
+		(stroke (width 0) (type default))
+		(uuid "89020317-9c62-4be7-91f6-3d7477d2fc76")
+	)
+	(wire (pts (xy 349.25 231.14) (xy 344.17 231.14))
+		(stroke (width 0) (type default))
+		(uuid "87d0886c-f4af-41f6-9611-5b7f1841c25e")
+	)
+	(label "MOTOR_CTRL" (at 344.17 231.14 0) (fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right bottom))
+		(uuid "91e76b80-afdb-4802-b398-8274b73cb76e")
+	)
+	(symbol (lib_id "Motor:Motor_DC") (at 370.84 195.58 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "02c87252-0ea1-4a12-8651-817c066b4d5d")
+		(property "Reference" "M1" (at 370.84 193.04 0)
+			(effects (font (size 1.27 1.27)) )
+		)
+		(property "Value" "Vibration_Motor" (at 370.84 198.12 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 370.84 195.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 370.84 195.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "4c3b8fd1-b8ce-403f-a665-43d29e89befe"))
+		(pin "2" (uuid "ba0658ec-2e97-4946-a2f4-29f2b8d18eff"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "M1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol (lib_id "Diode:1N4148") (at 383.54 195.58 270) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "3ec05971-b714-4046-b18b-32e07e61b390")
+		(property "Reference" "D1" (at 383.54 193.04 0)
+			(effects (font (size 1.27 1.27)) )
+		)
+		(property "Value" "1N4148" (at 383.54 198.12 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 383.54 195.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 383.54 195.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "d77feb12-e3f6-4ff8-ab4c-b7dc1bfcd995"))
+		(pin "2" (uuid "d51d213f-2a0d-4457-882e-3f66cd71a552"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 370.84 190.50) (xy 370.84 185.42))
+		(stroke (width 0) (type default))
+		(uuid "97a144cb-d46b-4fd9-b47a-345a8efbb880")
+	)
+	(wire (pts (xy 383.54 191.77) (xy 383.54 185.42))
+		(stroke (width 0) (type default))
+		(uuid "3a1746c7-77ef-408a-9336-c65acb437823")
+	)
+	(wire (pts (xy 370.84 185.42) (xy 383.54 185.42))
+		(stroke (width 0) (type default))
+		(uuid "da395a50-c9c2-4d29-90f7-ee79fea4e991")
+	)
+	(junction (at 370.84 185.42) (diameter 0) (color 0 0 0 0) (uuid "6e396cba-dc77-432c-a675-a3ff73ddf6fe"))
+	(wire (pts (xy 370.84 185.42) (xy 370.84 182.88))
+		(stroke (width 0) (type default))
+		(uuid "79e91c59-e55f-49ba-abbf-a57098093af7")
+	)
+	(symbol (lib_id "power:+3V3") (at 370.84 182.88 0) (unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "e9e17dcd-cf57-4932-b11c-23a7fb65f978")
+		(property "Reference" "#PWR21" (at 370.84 180.34 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "+3V3" (at 370.84 179.07 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "" (at 370.84 182.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 370.84 182.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "c095e086-c8e8-49d5-8685-741a2891a52d"))
+		(instances
+			(project "elderwatch"
+				(path "/08a77c31-512f-4e59-85d0-7d1ca331fc3b"
+					(reference "#PWR21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 370.84 226.06) (xy 370.84 203.20))
+		(stroke (width 0) (type default))
+		(uuid "f96cc64c-c484-448b-a20b-5582807b2a42")
+	)
+	(junction (at 370.84 203.20) (diameter 0) (color 0 0 0 0) (uuid "e0cb5ae0-1f30-4a42-a1b2-dbf650bff549"))
+	(wire (pts (xy 383.54 199.39) (xy 383.54 203.20))
+		(stroke (width 0) (type default))
+		(uuid "4749fd32-dc62-4da2-b661-11e55c5b3047")
+	)
+	(wire (pts (xy 370.84 203.20) (xy 383.54 203.20))
+		(stroke (width 0) (type default))
+		(uuid "c0f02dc0-d79b-46c5-9999-259dde1bd9d7")
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

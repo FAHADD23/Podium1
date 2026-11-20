@@ -1,0 +1,3 @@
+Info: X scale constrained.
+Info: Y scale constrained.
+Warning: Width correction constrained.  The width correction value must be in the range of [-0,199999 mm; -0,000002 mm] for the current design rules.
