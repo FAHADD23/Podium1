@@ -516,7 +516,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "REV1",
+      "plot": "PRINT1",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""
